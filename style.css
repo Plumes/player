@@ -1,0 +1,74 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+div.player-container {
+    min-width: 200px;
+    max-width: 600px;
+    height: 50px;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+.player-container .left-control {
+    float: left;
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+}
+.left-control .ctr-btn {
+    color: #69BEEF;
+    font-size: 36px;
+    height: 50px;
+    width: 36px;
+    text-align: center;
+    line-height: 50px;
+}
+.player-container .right-control {
+    margin: 0 0 0 50px;
+    height: 50px;
+    padding: 0 5px;
+    background-color: cadetblue;
+}
+.right-control .song-meta {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.right-control .bar {
+    font-size: 14px;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+}
+.bar .progress-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 8px 0;
+}
+.bar .progress-wrapper .progress {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background: #cdcdcd;
+}
+.bar .played-time, .bar .song-len {
+    width: 45px;
+    position: absolute;
+    top: 0;
+}
+.bar .played-time {
+    left: 0;
+    text-align: left;
+}
+.bar .song-len {
+    right: 0;
+    text-align: right;
+}
